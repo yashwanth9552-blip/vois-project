@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
-file_path = Path(r"C:\Users\MUKESH KUMAR.A\Downloads\1730285881-Airbnb_Open_Data.xlsx") #change this file name
+file_path = Path(r"C:\Users\Yashwanth R\Downloads\1730285881-Airbnb_Open_Data.xlsx") #change this file name
 df = pd.read_excel(file_path, sheet_name="in")
 print("✅ Dataset Loaded Successfully")
 print("Shape of dataset:", df.shape)
@@ -48,4 +48,5 @@ plt.show()
 avg_price_neigh.to_csv("avg_price_by_neighbourhood.csv")
 top_reviewed.to_csv("top_reviewed_listings.csv", index=False)
 avg_availability.to_csv("avg_availability_by_neighbourhood.csv")
+
 print("\n✅ Analysis complete. Results saved as CSV files.")
